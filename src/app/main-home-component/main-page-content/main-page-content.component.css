@@ -9,4 +9,12 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-} 
+}
+
+.play {
+  background-image: url("./../../../assets/play/play.png");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
