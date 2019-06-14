@@ -11,6 +11,8 @@
 .mainList {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
+  padding: 0;
 }
 
 .mainList li {
@@ -29,6 +31,9 @@
   color: black;
   font-weight: normal;
 }
+.footerList a{
+  max-width: 100px;
+}
 
 .siteMap {
   width: 100%;
@@ -37,9 +42,21 @@
   flex-wrap: wrap;
 }
 
-.terms {
+.terms, .footerLinks {
   display: flex;
   flex-wrap: wrap;
+}
+
+.policyList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 10px 0;
+}
+
+.policyList li {
+  display: inline;
+  margin: auto;
 }
 
 p {
@@ -47,11 +64,17 @@ p {
 }
 
 .pageEndLinks {
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  width: 100%;
 }
 
 .pageEndLinks a{
   background: red;
+  margin: 5px;
 }
 .pageEndLinks li {
+  flex: 0 1 auto;
   display: inline;
 }
