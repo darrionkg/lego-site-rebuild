@@ -1,27 +1,49 @@
-# LegoRebuild
+# _Lego Rebuild_
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+#### _A website to rebuild the official lego.com website , 06/14/2019_
 
-## Development server
+#### By _**Darrion Gering**_
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
+_ A rebuilt lego website to practice angular_
 
-## Code scaffolding
+## Setup/Installation Requirements
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. _Clone from GitHub_
+2. _$type cd lego-site-rebuild_
+3. _$type npm install to install packages_
+4. _$type npm serve --open to start and open the dev server_
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Specs
 
-## Running unit tests
+| Current Behaviors|
+| ------------- |
+| 1. The user can currently see the index page, a copy of the main page on lego.com |
+| 2. A navigation bar is a copy of the navigation bar on the website|
+| 3. The program uses image caurosells, similar to the official site |
+| 4. Code is modularized to fit angular best practices|
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+|Future Implementations |
+| ------------- |
+| Lego API |
+| Additional Link Pages |
+| Firebase implementation for log in |
+| Firebase implementation for legos |
 
-## Running end-to-end tests
+## Support and contact details
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+darrionkg@gmail.com
 
-## Further help
+## Technologies Used
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Javascript
+* html
+* css
+* angular
+
+### License
+
+*MIT License*
+
+Copyright (c) 2019 **_Darrion Gering_**
