@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IndexComponent} from './main-home-component/index/index.component';
 
 const routes: Routes = [
-  { path: 'en-us', component: IndexComponent }
+  { path: '', component: IndexComponent }
 ];
 
 @NgModule({
