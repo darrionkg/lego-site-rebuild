@@ -1,4 +1,27 @@
 .footerContainer {
   width: 100%;
-  height: 50%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.footerList {
+  overflow: auto;
+}
+
+.footerList li {
+  max-width: 100px;
+}
+
+.mainList {
+    
+}
+
+.siteMap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
