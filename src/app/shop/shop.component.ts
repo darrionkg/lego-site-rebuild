@@ -12,14 +12,14 @@ import { ShopService } from './../shop.service';
 export class ShopComponent implements OnInit {
   constructor(private router: Router, private shopService: ShopService) { }
 
-  legos: FirebaseListObservable<any[]>;
-  currentRoute: string = this.router.url;
+  // legos: FirebaseListObservable<any[]>;
+  // currentRoute: string = this.router.url;
   ngOnInit() {
-    this.legos = this.shopService.getLegos();
+  //   this.legos = this.shopService.getLegos();
   }
 
-  goToDetailPage(clickedLegoSet) {
-    this.router.navigate(['', clickedLegoSet.$key]);
-  }
+  // goToDetailPage(clickedLegoSet) {
+  //   this.router.navigate(['', clickedLegoSet.$key]);
+  // }
 
 }
