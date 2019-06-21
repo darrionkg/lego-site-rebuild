@@ -8,6 +8,9 @@ import { MainPageContentComponent } from './main-home-component/main-page-conten
 import { FooterContentComponent } from './main-home-component/footer-content/footer-content.component';
 import { IndexComponent } from './main-home-component/index/index.component';
 import { ImageSliderComponent } from './main-home-component/image-slider/image-slider.component';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 @NgModule({
   declarations: [
