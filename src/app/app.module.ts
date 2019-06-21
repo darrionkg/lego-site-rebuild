@@ -11,6 +11,7 @@ import { ImageSliderComponent } from './main-home-component/image-slider/image-s
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { ShopComponent } from './shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     MainPageContentComponent,
     FooterContentComponent,
     IndexComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
