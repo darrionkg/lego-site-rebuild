@@ -9,6 +9,16 @@ import { FooterContentComponent } from './main-home-component/footer-content/foo
 import { IndexComponent } from './main-home-component/index/index.component';
 import { ImageSliderComponent } from './main-home-component/image-slider/image-slider.component';
 import { ShopComponent } from './shop/shop.component';
+import { AngularFireModule } from '@angular/fire';
+import { masterFirebaseConfig } from './api-keys';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
 
 @NgModule({
   declarations: [
@@ -22,7 +32,9 @@ import { ShopComponent } from './shop/shop.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
