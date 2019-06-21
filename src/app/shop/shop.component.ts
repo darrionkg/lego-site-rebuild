@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-//import { ProductService } from '../product.service';
-//import { FirebaseListObservable } from 'angularfire2/database';
+import { FirebaseListObservable } from 'angularfire2/database';
 import { ShopService } from './../shop.service';
-import { Lego } from './../lego.model';
 
 @Component({
   selector: 'app-shop',
   templateUrl: './shop.component.html',
-  styleUrls: ['./shop.component.css']
+  styleUrls: ['./shop.component.css'],
+  providers: [ShopService]
 })
 export class ShopComponent implements OnInit {
-  legos: Lego[];
   constructor(private router: Router, private shopService: ShopService) { }
 
+  legos: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
   ngOnInit() {
     this.legos = this.shopService.getLegos();
   }

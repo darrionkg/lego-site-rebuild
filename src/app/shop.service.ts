@@ -9,7 +9,7 @@ export class ShopService {
   legos: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-    this.legos = database.list('legos');
+    this.legos = database.list('sets');
    }
 
   getLegos() {
