@@ -8,6 +8,7 @@ import { MainPageContentComponent } from './main-home-component/main-page-conten
 import { FooterContentComponent } from './main-home-component/footer-content/footer-content.component';
 import { IndexComponent } from './main-home-component/index/index.component';
 import { ImageSliderComponent } from './main-home-component/image-slider/image-slider.component';
+import { ShopComponent } from './shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ImageSliderComponent } from './main-home-component/image-slider/image-s
     MainPageContentComponent,
     FooterContentComponent,
     IndexComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,
