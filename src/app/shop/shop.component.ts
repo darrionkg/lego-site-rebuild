@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ShopService } from './../shop.service';
+
 @Component({
   selector: 'app-shop',
   templateUrl: './shop.component.html',
@@ -8,7 +9,7 @@ import { ShopService } from './../shop.service';
 export class ShopComponent implements OnInit {
 
   constructor(private shopService: ShopService) { }
-  legos;
+
   ngOnInit() {
   }
 

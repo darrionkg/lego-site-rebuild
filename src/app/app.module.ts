@@ -9,9 +9,9 @@ import { FooterContentComponent } from './main-home-component/footer-content/foo
 import { IndexComponent } from './main-home-component/index/index.component';
 import { ImageSliderComponent } from './main-home-component/image-slider/image-slider.component';
 import { ShopComponent } from './shop/shop.component';
-import { AngularFireModule } from '@angular/fire';
 import { masterFirebaseConfig } from './api-keys';
-import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -34,7 +34,7 @@ export const firebaseConfig = {
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireStorageModule
+    AngularFirestoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
