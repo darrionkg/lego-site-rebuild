@@ -15,8 +15,8 @@ export class ShopService {
     return this.database.collection('sets').valueChanges();
   }
 
-  getSet(name) {
-    return this.database.collection('sets').doc('2').collection('test', ref => 
-    ref.where('name', '==', name));
-  }
+  // getSet(name) {
+  //   return this.database.collection('sets').doc('2').collection('test', ref => 
+  //   ref.where('name', '==', name));
+  // }
 }
