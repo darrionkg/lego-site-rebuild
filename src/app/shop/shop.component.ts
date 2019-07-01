@@ -11,6 +11,7 @@ export class ShopComponent implements OnInit {
   constructor(private shopService: ShopService) { }
 
   ngOnInit() {
+    console.log(this.shopService.getSet('Tantive IV'));
   }
 
 }
